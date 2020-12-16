@@ -1,0 +1,4 @@
+Pt = 100; %W
+PtdB = 10*log10(Pt/1e-3); %dBm
+PrdB = PtdB + Gt + Gr - L - Lc %dBm
+Pr = 1e-3*10^(PrdB/10) %W
